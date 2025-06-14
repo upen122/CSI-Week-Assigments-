@@ -78,12 +78,12 @@ def print_rangoli(size):
     lines = []
 
     for i in range(size):
-        left = alphabets[size-1:i:-1]   # descending part
-        middle = alphabets[i:size]      # ascending part
+        left = alphabets[size-1:i:-1] 
+        middle = alphabets[i:size] 
         row = '-'.join(left + middle)
         lines.append(row.center(4 * size - 3, '-'))
 
-    # Complete rangoli by mirroring the top and bottom
+ 
     full_rangoli = lines[::-1] + lines[1:]
 
     for line in full_rangoli:
